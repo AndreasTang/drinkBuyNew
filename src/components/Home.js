@@ -73,11 +73,9 @@ const Home = () => {
 
     const sendMail = (orderId, attendantEmail, fetch) => {
 
-        console.log(attendantEmail)
-
         if (attendantEmail && fetch) {
 
-            emailjs.send("gmail", "drinkArrived", {"webURL":"https://drinkbuycoding101.herokuapp.com/", "admin_email":"0114078@nkust.edu.tw", "order":orderId, targetEmail: attendantEmail}, process.env.REACT_APP_EMAILJS_USER)
+            emailjs.send("gmail", "drinkArrived", {"webURL":"https://drinkbuynew.herokuapp.com/", "admin_email":"0114078@nkust.edu.tw", "order":orderId, "targetEmail": attendantEmail}, process.env.REACT_APP_EMAILJS_USER)
 			.then((result) => {
                 console.log(result.text)
 			}).catch((error) => {
@@ -86,7 +84,7 @@ const Home = () => {
             
         } else if (attendantEmail) {
 
-            emailjs.send("gmail", "drinkbuy", {"webURL":"https://drinkbuycoding101.herokuapp.com/", "admin_email":"0114078@nkust.edu.tw", "order":orderId, targetEmail: attendantEmail}, process.env.REACT_APP_EMAILJS_USER)
+            emailjs.send("gmail", "drinkbuy", {"webURL":"https://drinkbuynew.herokuapp.com/", "admin_email":"0114078@nkust.edu.tw", "order":orderId, "targetEmail": attendantEmail}, process.env.REACT_APP_EMAILJS_USER)
 			.then((result) => {
                 console.log(result.text)
 			}).catch((error) => {
