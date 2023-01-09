@@ -15,8 +15,8 @@
   "dependencies": {
     "@sendgrid/mail": "^6.5.4",
     "emailjs-com": "^2.4.1",
-    "firebase-admin": "^8.9.2",
-    "firebase-functions": "^3.3.0",
+    "firebase-admin": "^11.4.1",
+    "firebase-functions": "^3.24.1",
     "nodemailer": "^6.4.5"
   },
   "devDependencies": {
